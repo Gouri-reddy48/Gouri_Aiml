@@ -1,0 +1,18 @@
+//write a c program tonread a int value as input from user and print sum of the digit present in the number??
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    int sum_digits=0,rem=0;
+    printf("enter a integer");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        rem=num%10;
+        sum_digits=rem+sum_digits;
+        num=num/10;
+    }
+    printf("%d",sum_digits);
+    
+}

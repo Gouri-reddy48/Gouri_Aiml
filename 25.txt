@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int num=144;
+    //declaring pointer
+    int *pointer=&num;
+    printf("num=%d \n",num);
+    
+    printf("num=%p \n",num);
+    printf("pointer=%p",pointer);
+}
+
+
+
+ #include<stdio.h>
+   int main()
+   {
+       int age=22;
+       int *ptr=&age;
+       int _age=*ptr;
+       printf("%d\n",_age);
+       //address
+       printf("%p\n",&age);
+       printf("%p\n",ptr);
+       printf("%p\n",&ptr);
+       //data
+       printf("%d\n",age);
+       printf("%d\n",*ptr);
+       printf("%d\n",*(&age));
+   }

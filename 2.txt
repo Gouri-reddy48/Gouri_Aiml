@@ -1,0 +1,16 @@
+//write a c program to print the reverse of user enter number??
+#include<stdio.h>
+int main()
+{
+    int num;
+    int reversed=0,remainder;
+    printf("enter a integer");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        remainder=num%10;
+        reversed=reversed*10+remainder;
+        num/=10;
+    }
+    printf("reversed number is;%d\n",reversed);
+}

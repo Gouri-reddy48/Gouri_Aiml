@@ -1,0 +1,16 @@
+//write the c program to read the month number as input from the user and check whethe it is valid or not
+#include<stdio.h>
+int main()
+{
+    int month;
+    printf("enter month number");
+    scanf("%d",&month);
+    if(month>=1 && month<=12)
+    {
+        printf("it is a valid month number");
+    }
+    else
+    {
+        printf("not a valid month number");
+    }
+}

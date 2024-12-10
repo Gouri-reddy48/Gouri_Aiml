@@ -1,0 +1,19 @@
+//write a c program to read the integer value as input from the user and check whether the user entered integer is a digit or number?
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter the integer\n");
+    scanf("%d",&num);
+    if((num>=10 && num<=99)||(num<=-10 && num>=-99))
+    
+    {
+      printf("2digit");
+      
+    }
+    else
+    {
+        printf("not 2digit");
+    }
+}
+

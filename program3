@@ -1,0 +1,27 @@
+//write a program to print prime number
+#include<stdio.h>
+int main()
+{
+    int productcode;
+    char productname[15];
+    int quantity;
+    int price;
+    printf("enter the product code:\n");
+    scanf("%ud\n",&productcode);
+    printf("enter the product name :\n"); 
+    scanf("%s\n",&productname);
+   
+    printf("enter the quantity :\n");
+    scanf("%d\n",&quantity);
+    printf("enter the price :\n");
+    scanf("%d\n",&price);
+    printf("customer bill :\n");
+    printf("----------------\n");
+    printf("product :%s\n",productname);
+    printf("quantity :%s\n",quantity);
+    printf("price :%d x price\n",quantity,price);
+    printf("net amount=%d",(quantity*price));
+    return 0;
+    
+    
+}
